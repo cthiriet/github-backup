@@ -31,7 +31,7 @@ export BACKUP_DIR="<path-to-backup-directory>"
 
 > `BACKUP_DIR` is the absolute path to the directory where you want to save your repos.
 
-### 2 - Run the script
+### 2 - Save your repos
 
 This script will clone all your repositories to the `BACKUP_DIR` directory.
 
@@ -39,7 +39,7 @@ This script will clone all your repositories to the `BACKUP_DIR` directory.
 zx main.mjs
 ```
 
-### 3 - (Optional) Save public repositories
+### 3 - (Optional) Save public repos
 
 You might want to save some cool GitHub public repositories as well.
 
