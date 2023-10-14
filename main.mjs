@@ -44,5 +44,5 @@ let clone =
 
 if (clone === "yes") {
   cd(`./${affiliation}`);
-  await Promise.all(urls.map((url) => $`git clone ${url}`));
+  await Promise.allSettled(urls.map((url) => $`git clone ${url}`));
 }
