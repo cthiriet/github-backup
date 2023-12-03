@@ -24,5 +24,6 @@
   "https://github.com/karpathy/ng-video-lecture",
   "https://github.com/karpathy/nn-zero-to-hero",
   "https://github.com/karpathy/micrograd",
-  "https://github.com/karpathy/llama2.c"
+  "https://github.com/karpathy/llama2.c",
+  "https://github.com/google/flax"
 ]
