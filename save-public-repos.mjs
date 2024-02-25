@@ -2,6 +2,9 @@
 
 import fs from "fs";
 
+if (!process.env["BACKUP_DIR"])
+  throw new Error("BACKUP_DIR environment variable not set");
+
 const repos = JSON.parse(fs.readFileSync("repos.json", "utf8"));
 
 cd(process.env["BACKUP_DIR"]);

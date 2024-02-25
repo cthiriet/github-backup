@@ -1,0 +1,10 @@
+{
+  "scripts": {
+    "clone": "zx ./main.mjs",
+    "public": "zx ./save-public-repos.mjs"
+  },
+  "dependencies": {
+    "enquirer": "^2.4.1",
+    "zx": "^7.2.3"
+  }
+}

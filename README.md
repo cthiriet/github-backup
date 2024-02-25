@@ -4,12 +4,12 @@ Save your GitHub repositories to a local directory.
 
 ## Dependencies
 
-You must have [Node.js](https://nodejs.org/en), `npm` and [`zx`](https://github.com/google/zx) installed globally on your machine.
+You must have [Node.js](https://nodejs.org/en) and `npm` installed globally on your machine.
 
-To install `zx`, run the following command:
+Then, install the project dependencies:
 
 ```bash
-npm i -g zx
+npm install
 ```
 
 ## Setup your credentials
@@ -36,7 +36,7 @@ export BACKUP_DIR="<path-to-backup-directory>"
 This script will clone all your repositories to the `BACKUP_DIR` directory.
 
 ```bash
-zx main.mjs
+npm run clone
 ```
 
 ### 3 - (Optional) Save public repos
@@ -46,7 +46,7 @@ You might want to save some cool GitHub public repositories as well.
 To do so, add the URL of the repos in the `repos.json` file and run the following command:
 
 ```bash
-zx save-public-repos.mjs
+npm run public
 ```
 
 > They will be saved in the `$BACKUP_DIR/public` directory.
