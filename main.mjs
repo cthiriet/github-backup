@@ -33,8 +33,8 @@ let res = await fetch(
   }
 );
 let data = await res.json();
-let urls = data.map((x) => ({
-  name: x.full_name,
+let urls = data.map((x, i) => ({
+  name: `${i} - ${x.full_name}`,
   value: x.clone_url,
 }));
 
