@@ -1,29 +1,46 @@
 [
   "https://github.com/bitcoin/bitcoin",
+
   "https://github.com/sveltejs/kit",
+
   "https://github.com/meilisearch/meilisearch",
-  "https://github.com/meilisearch/milli",
+
   "https://github.com/vercel/next.js",
+
   "https://github.com/rust-lang/rust",
+
   "https://github.com/sveltejs/svelte",
+
   "https://github.com/tailwindlabs/tailwindcss",
+
+  "https://github.com/pytorch/pytorch",
+  "https://github.com/pytorch/torchtune",
+  "https://github.com/pytorch/torchtitan",
+
   "https://github.com/tensorflow/tensorflow",
   "https://github.com/tensorflow/text",
-  "https://github.com/pytorch/pytorch",
+
   "https://github.com/google/jax",
+  "https://github.com/google/flax",
+
   "https://github.com/deepmind/alphafold",
   "https://github.com/deepmind/dm-haiku",
   "https://github.com/deepmind/sonnet",
+
   "https://github.com/huggingface/transformers",
   "https://github.com/huggingface/tokenizers",
   "https://github.com/huggingface/accelerate",
+  "https://github.com/huggingface/trl",
+  "https://github.com/huggingface/peft",
+
   "https://github.com/karpathy/nanoGPT",
   "https://github.com/karpathy/makemore",
-  "https://github.com/lucidrains/DALLE2-pytorch",
-  "https://github.com/lucidrains/PaLM-rlhf-pytorch",
   "https://github.com/karpathy/ng-video-lecture",
   "https://github.com/karpathy/nn-zero-to-hero",
   "https://github.com/karpathy/micrograd",
   "https://github.com/karpathy/llama2.c",
-  "https://github.com/google/flax"
+  "https://github.com/karpathy/llm.c",
+
+  "https://github.com/lucidrains/DALLE2-pytorch",
+  "https://github.com/lucidrains/PaLM-rlhf-pytorch"
 ]
