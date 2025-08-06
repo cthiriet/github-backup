@@ -19,4 +19,14 @@ if (fs.existsSync(folderName)) {
 
 cd(`./${folderName}`);
 
-await Promise.all(repos.map((url) => $`git clone --depth=1 ${url}`));
+// Clone repos in batches.
+const batchSize = 1;
+for (let i = 0; i < repos.length; i += batchSize) {
+  const batch = repos.slice(i, i + batchSize);
+  console.log(
+    `Cloning batch ${Math.floor(i / batchSize) + 1}/${Math.ceil(
+      repos.length / batchSize
+    )} (${batch.length} repos)`
+  );
+  await Promise.allSettled(batch.map((url) => $`git clone --depth=1 ${url}`));
+}

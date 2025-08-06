@@ -60,5 +60,16 @@ if (selectedUrls.repos.length > 0) {
   let cloneUrls = selectedUrls.repos.map(
     (repoName) => urls.find((url) => url.name === repoName).value
   );
-  await Promise.allSettled(cloneUrls.map((url) => $`git clone ${url}`));
+
+  // Clone repos in batches.
+  const batchSize = 1;
+  for (let i = 0; i < cloneUrls.length; i += batchSize) {
+    const batch = cloneUrls.slice(i, i + batchSize);
+    console.log(
+      `Cloning batch ${Math.floor(i / batchSize) + 1}/${Math.ceil(
+        cloneUrls.length / batchSize
+      )} (${batch.length} repos)`
+    );
+    await Promise.allSettled(batch.map((url) => $`git clone --mirror ${url}`));
+  }
 }

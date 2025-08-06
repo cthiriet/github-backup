@@ -42,5 +42,18 @@
   "https://github.com/karpathy/llm.c",
 
   "https://github.com/lucidrains/DALLE2-pytorch",
-  "https://github.com/lucidrains/PaLM-rlhf-pytorch"
+  "https://github.com/lucidrains/PaLM-rlhf-pytorch",
+
+  "https://github.com/openai/codex",
+  "https://github.com/openai/gpt-oss",
+  "https://github.com/openai/harmony",
+  "https://github.com/openai/openai-agents-python",
+
+  "https://github.com/sqlite/sqlite",
+
+  "https://github.com/postgres/postgres",
+
+  "https://github.com/rclone/rclone",
+
+  "https://github.com/sapientinc/HRM"
 ]
